@@ -1,8 +1,19 @@
+ .container {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
  .varios1 {
     padding: 20px;
     border: 30px solid rgb(240, 171, 171);
     margin: 20px;
     position: static;
+    order: 2;
+    flex-flow: column wrap; 
   }
 
   .varios2 {
@@ -11,6 +22,7 @@
     position: relative;
     border:10px solid rgb(13, 34, 129);
     position: relative;
+    flex-grow: 2;
   }
  
   .varios3 {
@@ -21,6 +33,8 @@
     top: 500px;
     left: 30px;
     float: right;
+    flex-shrink: 1;
+    flex-basis: 200px;
   }
 
   .varios4 {
@@ -31,6 +45,7 @@
     top: 250px;
     right: 50px;
     float: left;
+    flex: 1 0 auto;
   }
 
   .varios5 {
@@ -42,6 +57,7 @@
     position: absolute;
     top: 400px;
     left: 30px;
+    align-self: flex-end;
   }
 
   .varios6 {
@@ -108,6 +124,19 @@
 
 
   .varios11 {
+    padding: 10px;
+    margin: 50px;
+    border:18px solid rgb(187, 126, 182);
+    top: 1000px;
+    left: 30px;
+    position: absolute;
+    top: 1100px;
+    right: 50px;
+    float: right;
+    visibility: collapse;
+  }
+
+  .varios12 {
     padding: 10px;
     margin: 50px;
     border:18px solid rgb(187, 126, 182);
